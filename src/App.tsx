@@ -1,10 +1,18 @@
 import "./App.css";
 import Plugins from "./pages/plugins";
+import PluginsSidebar from "./pages/plugins/sidebar";
 
 function App() {
 	return (
 		<>
-			<Plugins />
+			<div
+			style={{
+				display: "grid",
+			}}
+			>
+				<PluginsSidebar />
+				<Plugins />
+			</div>
 		</>
 	);
 }

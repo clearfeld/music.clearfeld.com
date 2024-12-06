@@ -1,3 +1,6 @@
+import { useState } from "react";
+import * as stylex from "@stylexjs/stylex";
+
 import {
 	Collapsible,
 	CollapsibleContent,
@@ -6,17 +9,18 @@ import {
 	Link,
 	H2,
 } from "@controlkit/ui";
-import { guitar } from "./lists/guitar";
-import * as stylex from "@stylexjs/stylex";
-import { useState } from "react";
+
 import type { T_Plugin } from "./lists";
+import { useAtomValue } from "jotai";
+import { pluginListAtom } from "./store/master_list_atom";
 
 const styles = stylex.create({
 	base: {
 		paddingTop: "2rem",
-        paddingBottom: "2rem",
+		paddingBottom: "2rem",
 		maxWidth: "1366px",
 		margin: "0 auto",
+		paddingLeft: "320px",
 	},
 
 	cell_outline: {
@@ -33,6 +37,7 @@ const styles = stylex.create({
 
 	img: {
 		objectFit: "cover",
+		maxWidth: "1160px",
 		width: "100%",
 		height: "100%",
 		borderRadius: "0.5rem",
@@ -46,6 +51,9 @@ const styles = stylex.create({
 });
 
 export default function Plugins() {
+	// TODO: create a derived atom for better search
+	const pluginLists = useAtomValue(pluginListAtom);
+
 	return (
 		<div {...stylex.props(styles.base)}>
 			<div
@@ -53,12 +61,22 @@ export default function Plugins() {
 					padding: "0 1rem",
 				}}
 			>
-				<H2>Guitars</H2>
+				{pluginLists.map((list) => {
+					return (
+						<div key={list.meta.title}>
+							<div>
+								<H2>{list.meta.title}</H2>
 
-				<br />
+								<br />
 
-				{guitar.map((plugin: T_Plugin) => {
-					return <PluginRow key={plugin.title} plugin={plugin} />;
+								{list.plugins.map((plugin: T_Plugin) => {
+									return <PluginRow key={plugin.title} plugin={plugin} />;
+								})}
+							</div>
+
+							<br />
+						</div>
+					);
 				})}
 			</div>
 		</div>
@@ -82,7 +100,7 @@ function PluginRow({ plugin }: PluginRowProps) {
 			<div
 				style={{
 					display: "grid",
-					gridTemplateColumns: "3fr 2fr 4rem 20rem 6.5rem 5.5rem",
+					gridTemplateColumns: "2.5fr 1.5fr 4rem 20rem 7rem 5.5rem",
 				}}
 			>
 				<div {...stylex.props(styles.cell_outline, styles.textOverflow)}>
