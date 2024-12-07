@@ -29,6 +29,28 @@ export const synth_list: T_Plugin[] = [
 	},
 
 	{
+		title: "Vital Basic",
+		extensions: ["VST3", ""],
+		paid: "FREE",
+		brand: "Matt Tytel",
+		img: "https://producer.zone/wp-content/uploads/2023/01/Vital.jpg",
+		homepage: "https://vital.audio/",
+		download: "https://account.vital.audio/basic",
+		notes: "",
+	},
+
+	{
+		title: "Vital",
+		extensions: ["VST3", ""],
+		paid: "PAID",
+		brand: "Matt Tytel",
+		img: "https://producer.zone/wp-content/uploads/2023/01/Vital.jpg",
+		homepage: "https://vital.audio/",
+		download: "https://vital.audio/",
+		notes: "",
+	},
+
+	{
 		title: "Triton Korg",
 		extensions: ["VST3", "VST2", "AU", "AAX"],
 		paid: "PAID",
@@ -36,17 +58,6 @@ export const synth_list: T_Plugin[] = [
 		img: "https://cdn.korg.com/us/products/upload/8163f5301ff218031341f813e7610b5f_pc.jpg",
 		homepage: "https://www.korg.com/us/products/software/kc_triton/",
 		download: "https://korg.shop/korg-collection-triton.html?___store=english",
-		notes: "",
-	},
-
-	{
-		title: "Vital",
-		extensions: ["VST3", ""],
-		paid: "FREE PAID",
-		brand: "Matt Tytel",
-		img: "https://producer.zone/wp-content/uploads/2023/01/Vital.jpg",
-		homepage: "https://vital.audio/",
-		download: "https://vital.audio/",
 		notes: "",
 	},
 
