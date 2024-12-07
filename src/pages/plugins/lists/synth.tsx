@@ -98,7 +98,7 @@ export const synth_list: T_Plugin[] = [
 		title: "Diva",
 		extensions: ["CLAP", "VST3", "VST2", "AU", "AAX"],
 		paid: "PAID",
-		brand: "Kilohearts",
+		brand: "u-he",
 		img: "https://u-he.com/products/diva/assets/images/uhe-diva-screenshot-fullui-1150x642.jpg",
 		homepage: "https://u-he.com/products/diva/",
 		download: "https://u-he.com/products/diva/",
@@ -113,6 +113,28 @@ export const synth_list: T_Plugin[] = [
 		img: "https://medias.arturia.net/cdn-cgi/image/quality=80/images/products/v-collection/video-thumb.jpg",
 		homepage: "https://www.arturia.com/products/software-instruments/v-collection/overview",
 		download: "https://www.arturia.com/products/v-collection/buy",
+		notes: "",
+	},
+
+	{
+		title: "Massive X",
+		extensions: ["VST3", "VST2", "AU", "AAX"],
+		paid: "PAID",
+		brand: "Native Instruments",
+		img: "https://images.squarespace-cdn.com/content/6303ead8843f98121c440a3c/1689916803403-PDM3W8Y4HC7ROD1XHX9F/mx.png?format=1500w&content-type=image%2Fpng",
+		homepage: "https://www.native-instruments.com/en/products/komplete/synths/massive-x/",
+		download: "https://www.native-instruments.com/en/pricing/massive-x/",
+		notes: "",
+	},
+
+	{
+		title: "Classic Synths",
+		extensions: ["VST3", "VST2", "AU", "AAX"],
+		paid: "FREE",
+		brand: "Spitfire Audio",
+		img: "https://images.ctfassets.net/g7eq1prqo1vw/2NysVTg5L2chmn9hsMUSZo/f86bbe9f68ab399f0e446a82e977516b/Classic_Synths.png?fm=webp&q=80",
+		homepage: "https://labs.spitfireaudio.com/packs/classic-synths",
+		download: "https://labs.spitfireaudio.com/subscribe",
 		notes: "",
 	},
 ];
