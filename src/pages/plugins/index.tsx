@@ -45,6 +45,7 @@ const styles = stylex.create({
 		width: "100%",
 		height: "100%",
 		borderRadius: "0.5rem",
+		justifySelf: "center",
 	},
 
 	textOverflow: {
