@@ -6,7 +6,7 @@ export const transient_shaper_list_meta = {
 
 export const transient_shaper_list: T_Plugin[] = [
 	{
-		title: "Transient Shaper",
+		title: "Shaper",
 		extensions: ["VST3", "VST2", "AU", "AAX"],
 		paid: "PAID",
 		brand: "Softube",

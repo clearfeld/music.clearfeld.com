@@ -8,6 +8,7 @@ import {
 	Lozenge,
 	Link,
 	H2,
+	LozengeVariants,
 } from "@controlkit/ui";
 
 import type { T_Plugin } from "./lists";
@@ -70,7 +71,25 @@ export default function Plugins() {
 					return (
 						<div key={list.meta.title}>
 							<div>
-								<H2>{list.meta.title}</H2>
+								<div
+									style={{
+										display: "flex",
+										gap: "1rem",
+										alignItems: "center",
+									}}
+								>
+									<H2
+										id={list.meta.title}
+										style={{
+											width: "fit-content",
+										}}
+									>
+										{list.meta.title}
+									</H2>
+									<Lozenge variant={LozengeVariants.IN_PROGRESS}>
+										{list.plugins.length}
+									</Lozenge>
+								</div>
 
 								<br />
 
