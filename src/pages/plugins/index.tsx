@@ -16,11 +16,15 @@ import { pluginListAtom } from "./store/master_list_atom";
 
 const styles = stylex.create({
 	base: {
+		boxSizing: "border-box",
+		width: "100%",
+
+		margin: "0 auto",
+
 		paddingTop: "2rem",
 		paddingBottom: "2rem",
-		maxWidth: "1366px",
-		margin: "0 auto",
-		paddingLeft: "320px",
+		paddingLeft: "calc(320px + 2rem)",
+		paddingRight: "2rem",
 	},
 
 	cell_outline: {

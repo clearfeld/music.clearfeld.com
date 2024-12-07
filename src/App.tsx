@@ -6,9 +6,9 @@ function App() {
 	return (
 		<>
 			<div
-			style={{
-				display: "grid",
-			}}
+				style={{
+					display: "grid",
+				}}
 			>
 				<PluginsSidebar />
 				<Plugins />
