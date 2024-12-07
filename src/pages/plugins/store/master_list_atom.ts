@@ -4,6 +4,7 @@ import { synth_list, synth_list_meta } from "../lists/synth";
 import { reverbs_list, reverbs_list_meta } from "../lists/reverbs";
 import { vocoder_list, vocoder_list_meta } from "../lists/vocoder";
 import { transient_shaper_list, transient_shaper_list_meta } from "../lists/transient_shaper";
+import { eq_list, eq_list_meta } from "../lists/eq";
 
 export const fullPluginList = [
 	{
@@ -29,6 +30,11 @@ export const fullPluginList = [
 	{
         meta: transient_shaper_list_meta,
 		plugins: [...transient_shaper_list],
+	},
+
+	{
+        meta: eq_list_meta,
+		plugins: [...eq_list],
 	},
 ];
 
