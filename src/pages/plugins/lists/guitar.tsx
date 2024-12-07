@@ -31,7 +31,7 @@ export const guitar_list: T_Plugin[] = [
 
 	{
 		title: "Stella (Free Edition) by Venus Theory",
-		extensions: [""],
+		extensions: ["VST3", "VST2", "AU", "AAX"],
 		paid: "FREE",
 		brand: "decent|samples",
 		img: "https://www.decentsamples.com/wp-content/uploads/2022/03/VT-Stella-Artwork.jpg",
@@ -44,7 +44,7 @@ export const guitar_list: T_Plugin[] = [
 
 	{
 		title: "Vinyl Guitar 2",
-		extensions: [""],
+		extensions: ["VST3", "VST2", "AU", "AAX"],
 		paid: "FREE",
 		brand: "Echo Sound Works",
 		img: "https://static.wixstatic.com/media/81ef3c_80f3e9db3e8340cea62b964c8d3d3136~mv2.png/v1/fill/w_873,h_546,al_c,q_90,usm_0.33_1.00_0.00,enc_avif,quality_auto/eswvinylguitarguihero.png",
@@ -99,7 +99,7 @@ export const guitar_list: T_Plugin[] = [
 
 	{
 		title: "Shreddage 3 Stratus Free",
-		extensions: [""],
+		extensions: ["VST3", "VST2", "AU", "AAX"],
 		paid: "FREE",
 		brand: "Impact Sound Works",
 		img: "https://impactsoundworks.com/wp-content/uploads/2023/07/S3StratusFREE-Featured-Image.png",

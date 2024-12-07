@@ -20,7 +20,7 @@ export const synth_list: T_Plugin[] = [
 		title: "Pigments 5",
 		extensions: ["VST3", "VST2", "AAX", "Standalone"],
 		paid: "PAID",
-		brand: "Xfer Records",
+		brand: "Arturia",
 		img: "https://medias.arturia.net/cdn-cgi/image/quality=80/images/products/pigments/banner-image.png",
 		homepage:
 			"https://www.arturia.com/products/software-instruments/pigments/overview",
@@ -30,7 +30,7 @@ export const synth_list: T_Plugin[] = [
 
 	{
 		title: "Vital Basic",
-		extensions: ["VST3", ""],
+		extensions: ["VST3", "VST2", "AU"],
 		paid: "FREE",
 		brand: "Matt Tytel",
 		img: "https://producer.zone/wp-content/uploads/2023/01/Vital.jpg",
@@ -41,7 +41,7 @@ export const synth_list: T_Plugin[] = [
 
 	{
 		title: "Vital",
-		extensions: ["VST3", ""],
+		extensions: ["VST3", "VST2", "AU"],
 		paid: "PAID",
 		brand: "Matt Tytel",
 		img: "https://producer.zone/wp-content/uploads/2023/01/Vital.jpg",
@@ -63,7 +63,7 @@ export const synth_list: T_Plugin[] = [
 
 	{
 		title: "Dexed",
-		extensions: [""],
+		extensions: ["VST3", "VST2", "AU"],
 		paid: "FREE",
 		brand: "Pascal Gauthier - asb2m10",
 		img: "https://static.kvraudio.com/i/b/dexed.png",
@@ -80,6 +80,39 @@ export const synth_list: T_Plugin[] = [
 		img: "https://surge-synthesizer.github.io/images/hero_dark.png",
 		homepage: "https://surge-synthesizer.github.io/",
 		download: "https://surge-synthesizer.github.io/",
+		notes: "",
+	},
+
+	{
+		title: "Phaseplant",
+		extensions: ["VST3", "VST2", "AU", "AAX"],
+		paid: "PAID",
+		brand: "Kilohearts",
+		img: "https://splice-res.cloudinary.com/image/upload/v1669673280/gear/features/PhasePlant_Feature-700x442-01.png",
+		homepage: "https://kilohearts.com/products/phase_plant",
+		download: "https://kilohearts.com/products/phase_plant",
+		notes: "",
+	},
+
+	{
+		title: "Diva",
+		extensions: ["CLAP", "VST3", "VST2", "AU", "AAX"],
+		paid: "PAID",
+		brand: "Kilohearts",
+		img: "https://u-he.com/products/diva/assets/images/uhe-diva-screenshot-fullui-1150x642.jpg",
+		homepage: "https://u-he.com/products/diva/",
+		download: "https://u-he.com/products/diva/",
+		notes: "",
+	},
+
+	{
+		title: "V Collection X",
+		extensions: ["VST3", "VST2", "AU", "AAX", "Standalone"],
+		paid: "PAID",
+		brand: "Arturia",
+		img: "https://medias.arturia.net/cdn-cgi/image/quality=80/images/products/v-collection/video-thumb.jpg",
+		homepage: "https://www.arturia.com/products/software-instruments/v-collection/overview",
+		download: "https://www.arturia.com/products/v-collection/buy",
 		notes: "",
 	},
 ];
